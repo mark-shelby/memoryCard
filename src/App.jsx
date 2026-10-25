@@ -10,7 +10,7 @@ export default function App() {
   // Fetch from Pokemon API on mount
   useEffect(() => {
     const fetchCards = async () => {
-      const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=12');
+      const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=16');
       const data = await response.json();
       
       const detailedCards = await Promise.all(
